@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PersonTests
 {
-    internal interface IMeasurable1
+    internal interface IMeasurable
     {
     }
 }

@@ -8,5 +8,11 @@ namespace PersonTests
 {
     internal interface IMeasurable
     {
+        /// <summary>
+        /// Represent the field that will display the Name's length 
+        /// </summary>
+        int Size { get; }
+
+
     }
 }

@@ -30,6 +30,5 @@
         }
 
         public int Size => this.Name.Length;
-
         }
 }

@@ -29,20 +29,20 @@ namespace PersonTests
             }
         }
 
-        //private static int TestReset()
-        //{
-        //    Person person = new ("Test");
-        //    person.Reset();
-        //    if (person.Name == string.Empty)
-        //    {
-        //        return 0;
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("TestReset failed!");
-        //        return 1;
-        //    }
-        //}
+        private static int TestReset()
+        {
+            Person person = new("Test");
+            person.Reset();
+            if (person.Name == string.Empty)
+            {
+                return 0;
+            }
+            else
+            {
+                MessageBox.Show("TestReset failed!");
+                return 1;
+            }
+        }
 
         //private static int TestCompare()
         //{

@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents one person saving their name.
     /// </summary>
-    public class Person : IMeasurable
+    public class Person : IMeasurable, IResettable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Person"/> class.
@@ -30,5 +30,11 @@
         }
 
         public int Size => this.Name.Length;
+
+        public void Reset()
+        {
+
+            this.Name = null;
+        }
         }
 }

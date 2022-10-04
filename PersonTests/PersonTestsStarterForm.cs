@@ -15,34 +15,34 @@ namespace PersonTests
             this.InitializeComponent();
         }
 
-        //private static int TestSize()
-        //{
-        //    Person person = new ("Test");
-        //    if (person.Size == 4)
-        //    {
-        //        return 0;
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("TestSize failed!");
-        //        return 1;
-        //    }
-        //}
+        private static int TestSize()
+        {
+            Person person = new("Test");
+            if (person.Size == 4)
+            {
+                return 0;
+            }
+            else
+            {
+                MessageBox.Show("TestSize failed!");
+                return 1;
+            }
+        }
 
-        //private static int TestReset()
-        //{
-        //    Person person = new ("Test");
-        //    person.Reset();
-        //    if (person.Name == string.Empty)
-        //    {
-        //        return 0;
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("TestReset failed!");
-        //        return 1;
-        //    }
-        //}
+        private static int TestReset()
+        {
+            Person person = new("Test");
+            person.Reset();
+            if (person.Name == string.Empty)
+            {
+                return 0;
+            }
+            else
+            {
+                MessageBox.Show("TestReset failed!");
+                return 1;
+            }
+        }
 
         //private static int TestCompare()
         //{

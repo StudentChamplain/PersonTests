@@ -29,12 +29,18 @@
             return this.Name;
         }
 
-        public int Size => this.Name.Length;
-
+        /// <summary>
+        /// This public method will reset the Name value to an empty string.
+        /// </summary>
         public void Reset()
         {
+            this.Name = "";
+        }
 
-            this.Name = null;
-        }
-        }
+        /// <summary>
+        /// Gets the name length and returns it as an int .
+        /// </summary>
+        public int Size => this.Name.Length;
+
+    }
 }

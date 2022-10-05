@@ -78,11 +78,11 @@ namespace PersonTests
         {
             this.failedTests = 0;
 
-            // Run feature tests here
-            // this.failedTests += TestDisplay();
+             //Run feature tests here
+            //this.failedTests += TestDisplay();
             // this.failedTests += TestCompare();
-            // this.failedTests += TestReset();
-            // this.failedTests += TestSize();
+            this.failedTests += TestReset();
+             this.failedTests += TestSize();
             MessageBox.Show(this.failedTests.ToString() + " of 4 tests failed!");
         }
     }

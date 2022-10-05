@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents one person saving their name.
     /// </summary>
-    public class Person : IMeasurable, IResettable
+    public class Person : IMeasurable, IResettable, IDisplayable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Person"/> class.
@@ -36,5 +36,13 @@
 
             this.Name = null;
         }
+
+        /// <summary>
+        /// Method inherited from the interface IDisplayable to display a persons name.
+        /// </summary>
+        public void Display()
+        {
+            MessageBox.Show(this.ToString());
         }
+    }
 }

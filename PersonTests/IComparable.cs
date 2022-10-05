@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents the IComparable interface.
     /// </summary>
-    /// <typeparam name="Person">Represents one Person</typeparam>
+    /// <typeparam name="Person">Represents one Person.</typeparam>
     internal interface IComparable<Person>
     {
         /// <summary>

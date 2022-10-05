@@ -17,7 +17,7 @@ namespace PersonTests
 
         private static int TestSize()
         {
-            Person person = new("Test");
+            Person person = new ("Test");
             if (person.Size == 4)
             {
                 return 0;
@@ -31,7 +31,7 @@ namespace PersonTests
 
         private static int TestReset()
         {
-            Person person = new("Test");
+            Person person = new ("Test");
             person.Reset();
             if (person.Name == string.Empty)
             {
@@ -46,8 +46,8 @@ namespace PersonTests
 
         private static int TestCompare()
         {
-            Person firstPerson = new("Alice");
-            Person secondPerson = new("Bob");
+            Person firstPerson = new ("Alice");
+            Person secondPerson = new ("Bob");
             if (firstPerson.CompareTo(secondPerson) < 0)
             {
                 return 0;

@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PersonTests
-{
+﻿namespace PersonTests
+    {/// <summary>
+     /// Represents the IMeasurable interface.
+     /// </summary>
     internal interface IMeasurable
     {
         /// <summary>
-        /// Represent the field that will display the Name's length 
+        /// Gets the Name's length and returns it as an int.
         /// </summary>
         int Size { get; }
-
-
     }
 }

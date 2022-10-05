@@ -21,6 +21,11 @@
         public virtual string Name { get; set; }
 
         /// <summary>
+        /// Gets the name length and returns it as an int .
+        /// </summary>
+        public int Size => this.Name.Length;
+
+        /// <summary>
         /// Returns a string that represents the person.
         /// </summary>
         /// <returns>String that represents the person.</returns>
@@ -36,7 +41,7 @@
         {
             this.Name = string.Empty;
         }
-        
+
         /// <summary>
         /// Method inherited from the interface IDisplayable to display a persons name.
         /// </summary>
@@ -61,11 +66,5 @@
                 return -1;
             }
         }
-    
-        /// <summary>
-        /// Gets the name length and returns it as an int .
-        /// </summary>
-        public int Size => this.Name.Length;
-        
-        }
+    }
 }

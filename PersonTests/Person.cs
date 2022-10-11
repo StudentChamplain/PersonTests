@@ -55,16 +55,22 @@
         /// </summary>
         /// <param name="person">Holds an instance of a Person.</param>
         /// <returns>Returns an int value.</returns>
-        public int CompareTo(Person person)
+        public int CompareTo(Person? person)
         {
-            if (this.Name == person.Name)
+            if (person is not null)
             {
-                return 1;
+                if (this.Name == person.Name)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return -1;
+                }
             }
-            else
-            {
-                return -1;
-            }
+
+            MessageBox.Show("Cannot compare person to null.");
+            return 0;
         }
     }
 }
